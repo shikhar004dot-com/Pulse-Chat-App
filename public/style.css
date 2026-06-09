@@ -405,28 +405,44 @@ body{
     cursor:pointer;
 }
 
-@media(max-width:768px){
+#menu-btn{
+    display:none;
+    margin-right:15px;
+    background:none;
+    border:none;
+    font-size:24px;
+    cursor:pointer;
+    color:inherit;
+}
 
-    .sidebar{
-        width:90px;
-        padding:10px;
+@media(max-width:768px){
+    #menu-btn{
+        display:block;
     }
 
-    .avatar{
-        width:50px;
-        height:50px;
-        font-size:20px;
+    .sidebar{
+        position:fixed;
+        top:0;
+        left:-260px;
+        width:260px;
+        height:100dvh;
+        z-index:1000;
+        transition:left .3s ease;
+    }
+
+    .sidebar.open{
+        left:0;
+    }
+
+    .chat-section{
+        width:100%;
     }
 
     .message{
-        max-width:85%;
+        max-width:90%;
     }
 
     .input-area{
-        padding:10px;
-    }
-
-    .input-area input{
         padding:10px;
     }
 

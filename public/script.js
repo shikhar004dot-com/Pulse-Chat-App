@@ -299,3 +299,18 @@ function closeSeenModal(){
     .style.display="none";
 }
 
+const menuBtn=document.getElementById("menu-btn");
+const sidebar=document.querySelector(".sidebar");
+menuBtn.addEventListener("click",()=>{
+
+    sidebar.classList.toggle("open");
+});
+
+document.getElementById("chat-box")
+.addEventListener("click",()=>{
+
+    if(window.innerWidth<=768){
+        sidebar.classList.remove("open");
+    }
+
+});
