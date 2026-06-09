@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pulse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="auth-screen">
+    <div class="auth-box">
+        <h1>Pulse</h1>
+        <div class="auth-tabs">
+            <button id="login-tab">Login</button>
+            <button id="register-tab">Register</button>
+        </div>
+
+        <input
+        type="text"
+        id="username-input"
+        placeholder="Username">
+
+        <input
+        type="password"
+        id="password-input"
+        placeholder="Password">
+
+        <button id="auth-btn">
+            Login
+        </button>
+
+        <p id="auth-message"></p>
+
+    </div>
+
+</div>
+
+    <div class="container" id="chat-container">
+        <div class="sidebar">
+            <div class="avatar" id="avatar">
+                A
+            </div>
+            <p id="current-user"></p>
+            <button id="theme-btn">
+                🌙 Dark Mode
+            </button>
+            <h2>Members</h2>
+            <ul id="members"></ul>
+            <h3 id="online-users">
+                Online Users:0
+            </h3>
+        </div>
+
+        <div class="chat-section">
+            <div class="chat-header">
+                <div>
+                    <h2>💬 Pulse</h2>
+                    <small>Group Chat</small>
+                </div>
+            </div>
+
+            <div id="chat-box"></div>
+            <p id="typing"></p>
+            <div class="input-area">
+                <input
+                    type="text"
+                    id="message"
+                    placeholder="Type message">
+                <button onclick="sendMessage()">
+                    Send
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+
+<div id="seen-modal" class="modal">
+    <div class="modal-content">
+        <h3>Seen By</h3>
+        <ul id="seen-list"></ul>
+        <button onclick="closeSeenModal()">
+            Close
+        </button>
+    </div>
+
+</div>
+</body>
+
+</html>
