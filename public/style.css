@@ -3,9 +3,13 @@
     padding:0;
     box-sizing:border-box;
 }
+html,
+body{
+    height:100%;
+}
 
 body{
-    height:100vh;
+    min-height:100dvh;
     font-family:Arial,sans-serif;
     background:#f4f4f4;
     color:black;
@@ -13,7 +17,8 @@ body{
 
 .container{
     display:flex;
-    height:100vh;
+    height:100dvh;
+    overflow:hidden
 }
 
 #auth-screen{
@@ -86,10 +91,8 @@ body{
 }
 
 #auth-message{
-    #auth-message{
     margin-top:12px;
     font-weight:600;
-}
 }
 
 
@@ -150,6 +153,8 @@ body{
     flex:1;
     display:flex;
     flex-direction:column;
+    min-width: 0;
+    overflow: hidden;
 }
 
 .chat-header{
@@ -173,8 +178,9 @@ body{
 
 #chat-box{
     flex:1;
-    padding:20px;
     overflow-y:auto;
+    padding:20px;
+    min-height:0;
     background:#f4f4f4;
     display:flex;
     flex-direction:column;
@@ -402,8 +408,8 @@ body{
 @media(max-width:768px){
 
     .sidebar{
-        width:180px;
-        padding:15px;
+        width:90px;
+        padding:10px;
     }
 
     .avatar{
