@@ -1,19 +1,24 @@
-# Pulse-Chat-App
+# 💬 Pulse Chat App
 
-A real-time group chat application built using Node.js, Express, Socket.IO, MongoDB, JWT Authentication, and bcrypt.
+A real-time group chat application built using Node.js, Express, Socket.IO, MongoDB Atlas, JWT Authentication, and bcrypt.
+
+## 🚀 Live Demo
+
+https://pulse-chat-app-z8jy.onrender.com/
 
 ## Features
 
 * User Registration & Login
 * JWT Authentication
-* Real-time Messaging
+* Real-time Messaging with Socket.IO
 * Online Members List
 * Typing Indicator
 * Message Seen Count
 * Dark Mode
 * Responsive UI
-* MongoDB Database Integration
+* MongoDB Atlas Integration
 * Password Hashing using bcrypt
+* Mobile-Friendly Interface
 
 ## Tech Stack
 
@@ -39,10 +44,14 @@ A real-time group chat application built using Node.js, Express, Socket.IO, Mong
 * JWT (JSON Web Token)
 * bcrypt.js
 
+### Deployment
+
+* Render
+
 ## Project Structure
 
 ```text
-chatApp/
+Pulse-Chat-App/
 │
 ├── middleware/
 │   └── auth.js
@@ -84,6 +93,7 @@ npm install
 ```env
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
+PORT=3000
 ```
 
 ### Run Application
@@ -106,17 +116,25 @@ http://localhost:3000
 
 ## Screenshots
 
-<img width="1918" height="966" alt="image" src="https://github.com/user-attachments/assets/7e0edd71-c26d-45ec-8b12-07bf2c983b54" />
-<img width="1918" height="970" alt="image" src="https://github.com/user-attachments/assets/a94255a4-e645-4421-bca2-92164d1fe0ba" />
-<img width="1918" height="967" alt="image" src="https://github.com/user-attachments/assets/110446f4-eab5-4949-8192-a94f41b1637e" />
-<img width="1918" height="967" alt="image" src="https://github.com/user-attachments/assets/f9a07dc0-c9e4-4e42-887c-ec2a35b914a2" />
-<img width="1918" height="967" alt="image" src="https://github.com/user-attachments/assets/fb62846b-f656-4d9d-a0e0-fd007f182dbc" />
+### Authentication Page
 
+<img width="1918" height="966" alt="Authentication Page" src="https://github.com/user-attachments/assets/7e0edd71-c26d-45ec-8b12-07bf2c983b54" />
 
+### Registration Success
 
+<img width="1918" height="970" alt="Registration Success" src="https://github.com/user-attachments/assets/a94255a4-e645-4421-bca2-92164d1fe0ba" />
 
+### Chat Interface
 
+<img width="1918" height="967" alt="Chat Interface" src="https://github.com/user-attachments/assets/110446f4-eab5-4949-8192-a94f41b1637e" />
 
+### Dark Mode toggle
+
+<img width="1918" height="967" alt="Dark Mode" src="https://github.com/user-attachments/assets/f9a07dc0-c9e4-4e42-887c-ec2a35b914a2" />
+
+### Seen Status & Members List
+
+<img width="1918" height="967" alt="Seen Status and Members List" src="https://github.com/user-attachments/assets/fb62846b-f656-4d9d-a0e0-fd007f182dbc" />
 
 ## Future Improvements
 
@@ -131,7 +149,7 @@ http://localhost:3000
 
 ## Author
 
-Shikhar Srivastava
+**Shikhar Srivastava**
 
 GitHub:
 https://github.com/shikhar004dot-com
